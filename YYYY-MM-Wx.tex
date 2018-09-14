@@ -1,0 +1,87 @@
+\input{_preamble_}
+
+\begin{document}
+\maketitle
+	
+\begin{abstract}
+The abstract gives a quick overview of the main news of the week.\\
+The idea is to set a main goal (or at least a main branch to advance) each week,
+and produce a report on friday (or monday), describing the job done.\\
+The report filename should have the format \verb|YEAR-MONTH-WEEK\_NUMBER|; e.g.: \verb|2019-09-W2.tex|
+\end{abstract}
+
+%% MAIN %%
+\chapter{Main goal of the week} %The title shoud reflect the main goal/branch of the week
+Every week there is a main goal to pursue or branch to develop.
+This section is about it.
+%%
+\section{Notes}
+Interesting thoughts you want to keep track of.
+Considerations, ideas, concerns, etc...
+Paragraphs are used, if necessary, to separate the topics.
+\paragraph{On the writing of notes}
+Notes are taken "on-the-fly" during the week, writing down what we believe to be relevant to the achievement of the main goal.
+%TODO TODO notes in the TeX file may be useful too...
+%%
+\section{Technical Details}
+This subsection gives details about the implementation improvements developed during the week.\\
+%
+Things are divided in subsections.
+\subsection{Involved technologies}
+Libraries, APIs, repos, etc...
+Currently using:
+\begin{itemize}
+  \item LaTeX\source{https://www.latex-project.org/}
+\end{itemize}
+
+The footnote link above is created with the \verb|source{}| environment, defined in the \verb|_preamble_| file;
+footnotes are shown in the same page and numbered in order of appearance.
+
+\textbf{Idea:} Bold text at the beginning of a line can be used as a mini-paragraph to help keep things organized.
+As a general rule, \textbf{bold} and \textit{italic} are useful to highlights keywords and important concepts in the text.
+%
+\subsection{Development Steps}
+Practical things done:
+\begin{itemize}
+  \item Created a template for the weekly report
+  \item Wrote some guidelines within the template
+\end{itemize}
+%
+\subsection{State of Project}
+A brief summary of the current state of the project and what's going to be the next step (i.e. what we are going to do next week)\\
+E.g.:\\
+\textbf{Current:} I wrote a template of my Weekly Report, and shared it on GitHub.\\
+\textbf{Next:} Do my job and write my report on Friday.
+
+%% RELATED %%
+\chapter{Related Work}
+New papers, projects, etc, read or discovered this week.
+%%
+\section{Papers}
+Ideally, it would be great to read at least a paper per week and write a few lines about it. For each paper write a paragraph (title and year) and put the reference in the \verb|Bibliography.bib| file.\\
+E.g.:
+\paragraph{LATEX: a document preparation system: user's guide and reference manual}\cite{lamport1994latex} The original LaTeX book  by L. Lamport. It describes the LaTeX system.
+%%
+\section{Projects}
+\paragraph{GitHub}\source{https://github.com}: a web-based hosting service for version control using Git.
+
+%% MISC %%
+\chapter{Misc}
+Other relevant things
+%
+\section{Relevant News}
+\paragraph{Weekly Report template just released} A new fantastic report template was just release open source by FF. You can find it at \href{https://github.com/frz-dev/weekly-report-tex-template}{https://github.com/frz-dev/weekly-report-tex-template}
+
+\section{Other cool stuff happened this week}
+I hit my head and became a genius!! Then hit it again and came back to normal...
+
+%% CONCLUSIONS %%
+\chapter{} %Empty chapter necessary to center the "Conclusion" title
+\section*{\centering \textit{Conclusions}}
+Sum up your thoughts about the week (what's improving, what's going bad, feelings about the project, etc...)
+
+
+\vspace*{50px} %Add space before the Bibliography
+\printbibliography
+
+\end{document}

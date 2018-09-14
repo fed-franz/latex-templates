@@ -1,0 +1,40 @@
+\documentclass[a4paper,12pt, notitlepage]{report}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=10mm,
+}
+
+\usepackage{titling}
+%Hide "Chapter X"
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{}{0pt}{\LARGE}   
+\titlespacing*{\chapter}{0pt}{0pt}{5pt}
+\titlespacing\section{0pt}{10pt}{5pt}
+\titlespacing\subsection{0pt}{5pt}{5pt}
+\titlespacing\subsubsection{0pt}{5pt}{5pt}
+\titlespacing\paragraph{0pt}{5pt}{5pt}
+
+\usepackage{blindtext}
+\usepackage{etoolbox} % for "\patchcmd" macro
+\makeatletter
+%Avoid page breaks at new chapters
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+\usepackage{verbatim}
+\usepackage{hyperref}
+\newcommand{\source}[1]{ \footnote{ \href{#1}{[\url{#1}]}} }
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{Bibliography}
+
+\title{Weekly Report}
+\author{Name Surname}
+\date{\today}
