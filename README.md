@@ -1,2 +1,2 @@
 # weekly-report-tex-template
-Template for a weekly report in LaTeX
+Template for a weekly report in LaTeX.
