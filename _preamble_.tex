@@ -38,6 +38,10 @@
 
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{Bibliography}
+%Use numbers in citations
+\makeatletter
+\def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
 
 \title{Weekly Report}
 \author{Name Surname}
