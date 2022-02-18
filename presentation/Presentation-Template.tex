@@ -13,27 +13,6 @@
 \setlength{\leftmargini}{0.5cm}
 \setlength{\leftmarginii}{0.5cm}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\title[OnSlideTitle] %optional
-{Title}
-
-\subtitle{Subtitle}
-
-\author[OnSlideAuthor] % (optional, for multiple authors)
-{Author}
-
-\institute[OnSlideInstitute] % (optional)
-{
-	Institute
-}
-
-\date[OnSlideDate] % (optional)
-{Date}
-
-%\titlegraphic{\includegraphics[height=1cm]{img/logo}}
-
 \makeatletter
 \def\slideentry#1#2#3#4#5#6{%
 	%section number, subsection number, slide number, first/last frame, page number, part number
@@ -96,9 +75,31 @@
 
 \AtBeginSection[] {
 	\begin{frame}[plain,noframenumbering]{Outline}{} %To hide header: [plain]
-	\tableofcontents[currentsection,hideallsubsections]
+		\tableofcontents[currentsection,hideallsubsections]
 	\end{frame}
 }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[OnSlideTitle] %optional
+{Title}
+
+\subtitle{Subtitle}
+
+\author[OnSlideAuthor] % (optional, for multiple authors)
+{Author}
+
+\institute[OnSlideInstitute] % (optional)
+{
+	Institute
+}
+
+\date[OnSlideDate] % (optional)
+{Date}
+
+%\titlegraphic{\includegraphics[height=1cm]{img/logo}}
+
 
 \begin{document}
 {
